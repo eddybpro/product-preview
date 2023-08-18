@@ -24,6 +24,7 @@ body {
   display: grid;
   place-items: center;
   background-color: var(--Cream);
+  min-height: 100vh;
   padding: 1rem;
 }
 
@@ -109,4 +110,24 @@ picture img {
 
 .cart-img {
   margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 787px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 60rem;
+  }
+
+  .para {
+    margin-top: 2rem;
+  }
+
+  .price-box {
+    margin-top: 2rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
 }
